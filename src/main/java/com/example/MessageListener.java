@@ -12,7 +12,7 @@ public class MessageListener extends ListenerAdapter {
     Message message;
     String content;
     public static void main(String[] args) {
-        JDA jda = JDABuilder.createDefault("x")
+        JDA jda = JDABuilder.createDefault("abc")
                 .enableIntents(GatewayIntent.MESSAGE_CONTENT) // enables explicit access to message.getContentDisplay()
                 .build();
         // You can also add event listeners to the already built JDA instance

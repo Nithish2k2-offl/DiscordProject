@@ -9,7 +9,7 @@ public class ReadyListener implements EventListener {
     public static void main(String[] args)
             throws InterruptedException {
         // Note: It is important to register your ReadyListener before building
-        JDA jda = JDABuilder.createDefault("x")
+        JDA jda = JDABuilder.createDefault("abc")
                 .addEventListeners(new ReadyListener())
                 .build();
 

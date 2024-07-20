@@ -7,6 +7,13 @@
   <groupId>com.example</groupId>
   <artifactId>discordproject</artifactId>
   <version>1.0</version>
+  <packaging>jar</packaging>
+  <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.0</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
   <name>discordproject</name>
   <!-- FIXME change it to the project's website -->
@@ -31,6 +38,21 @@
     <artifactId>JDA</artifactId>
     <version>5.0.0-beta.21</version> 
     </dependency>
+    <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- Spring Boot Starter Data JPA for database interaction -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
   </dependencies>
 
   <build>
@@ -75,6 +97,10 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
       </plugins>
     </pluginManagement>
   </build>
