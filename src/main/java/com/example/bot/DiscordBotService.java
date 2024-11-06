@@ -3,7 +3,7 @@ import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.JDA;
 import org.springframework.stereotype.Service;
 
-import jakarta.annotation.PostConstruct;
+import jakarta.annotation.*;
 
 @Service
 public class DiscordBotService {
